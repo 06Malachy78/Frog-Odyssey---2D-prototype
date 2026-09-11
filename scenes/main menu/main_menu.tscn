@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://bq184k127yhrf"]
+
+[ext_resource type="Script" uid="uid://286tpfjvkcsp" path="res://scenes/main menu/main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://80ekm8kgeilr" path="res://Pixel Adventure 1/Free/Background/Brown.png" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://856q3c7ipkqg" path="res://cooltext514495105654998.png" id="2_bqqt6"]
+[ext_resource type="PackedScene" uid="uid://ctn2oex5hrosm" path="res://scenes/game objects/main_character.tscn" id="4_okfgx"]
+
+[node name="MainMenu" type="Node" unique_id=1048206058]
+script = ExtResource("1_bqqt6")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=2123881102]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ekxnf")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=731729892]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -532.0
+offset_top = -148.0
+offset_right = 534.0
+offset_bottom = -36.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bqqt6")
+
+[node name="Level 1" type="Button" parent="." unique_id=270460650]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -283.0
+offset_top = 13.0
+offset_right = -35.0
+offset_bottom = 89.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Level 1"
+
+[node name="Level 2" type="Button" parent="." unique_id=1967876881]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 29.0
+offset_top = 13.0
+offset_right = 277.0
+offset_bottom = 89.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Level 2
+"
+
+[node name="Level 3" type="Button" parent="." unique_id=1051775918]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -281.0
+offset_top = 143.0
+offset_right = -33.0
+offset_bottom = 219.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Level 3
+"
+
+[node name="CharacterBody2D" parent="." unique_id=1577063257 instance=ExtResource("4_okfgx")]
+position = Vector2(124, 123)
+
+[node name="CharacterBody2D" parent="CharacterBody2D" unique_id=429005227 instance=ExtResource("4_okfgx")]
+position = Vector2(70, -75)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D" unique_id=237557913 instance=ExtResource("4_okfgx")]
+position = Vector2(111, 47)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=680676407 instance=ExtResource("4_okfgx")]
+position = Vector2(-200, -188)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=538490871 instance=ExtResource("4_okfgx")]
+position = Vector2(227, 30)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=1435415266 instance=ExtResource("4_okfgx")]
+position = Vector2(140, 3)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=150601387 instance=ExtResource("4_okfgx")]
+position = Vector2(-76, -78)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=1908128622 instance=ExtResource("4_okfgx")]
+position = Vector2(28, 197)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=419315946 instance=ExtResource("4_okfgx")]
+position = Vector2(187, -177)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=1432274508 instance=ExtResource("4_okfgx")]
+position = Vector2(-44, 207)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=371206097 instance=ExtResource("4_okfgx")]
+position = Vector2(114, -62)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=1497047625 instance=ExtResource("4_okfgx")]
+position = Vector2(-2, 101)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D/CharacterBody2D" unique_id=1347873349 instance=ExtResource("4_okfgx")]
+position = Vector2(112, -58)
+
+[node name="CharacterBody2D2" parent="." unique_id=583237932 instance=ExtResource("4_okfgx")]
+position = Vector2(42, 53)
+
+[node name="CharacterBody2D" parent="CharacterBody2D2" unique_id=2134025521 instance=ExtResource("4_okfgx")]
+position = Vector2(858, -11)
+
+[node name="CharacterBody2D" parent="CharacterBody2D2/CharacterBody2D" unique_id=13336481 instance=ExtResource("4_okfgx")]
+position = Vector2(-128, -123)
+
+[node name="CharacterBody2D" parent="CharacterBody2D2/CharacterBody2D/CharacterBody2D" unique_id=1050093505 instance=ExtResource("4_okfgx")]
+position = Vector2(268, 121)
+
+[node name="CharacterBody2D3" parent="." unique_id=1134793469 instance=ExtResource("4_okfgx")]
+texture_filter = 1
+position = Vector2(944, 122)
+rotation = 0.05235988
+
+[connection signal="pressed" from="Level 1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Level 2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Level 3" to="." method="_on_level_3_pressed"]
